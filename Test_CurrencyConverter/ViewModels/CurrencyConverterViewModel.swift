@@ -2,11 +2,7 @@ import Foundation
 import Combine
 
 class CurrencyConverterViewModel: ObservableObject {
-    @Published var amount: String = "" {
-        didSet {
-            formatAmount()
-        }
-    }
+    @Published var amount: String = ""
     @Published var sourceCurrency: Currency?
     @Published var targetCurrency: Currency?
     @Published var convertedAmount: String = ""
@@ -39,7 +35,6 @@ class CurrencyConverterViewModel: ObservableObject {
         if let dotIndex = amount.firstIndex(of: ".") {
                 let decimalPart = amount[dotIndex...]
                 if decimalPart.count > 3 {
-                    // Удаляем лишние знаки после запятой
                     let excessCount = decimalPart.count - 3
                     amount.removeLast(excessCount)
                     return

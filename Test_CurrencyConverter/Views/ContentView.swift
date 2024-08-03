@@ -15,7 +15,7 @@ struct ContentView: View {
             
             VStack {
                 HStack {
-                    CurrencyTextField(text: $viewModel.amount, isEditable: true, borderColor: .blue)
+                    CurrencyTextField(text: $viewModel.amount, isEditable: true, borderColor: .blue, viewModel: viewModel)
                         .accessibilityLabel("Amount to convert")
                         .accessibilityHint("Enter the amount you wish to convert")
                     
@@ -29,9 +29,9 @@ struct ContentView: View {
                 .padding()
                 
                 HStack {
-                    CurrencyTextField(text: $viewModel.convertedAmount, isEditable: false, borderColor: .gray)
-                        .accessibilityLabel("Converted Amount")
-                        .accessibilityHint("This is the converted amount")
+                    CurrencyTextField(text: $viewModel.convertedAmount, isEditable: false, borderColor: .gray, viewModel: viewModel)
+                    .accessibilityLabel("Converted Amount")
+                    .accessibilityHint("This is the converted amount")
                     
                     CurrencyButton(currency: Currency(code: "KES", name: "Kenyan Shilling", imgUrl: viewModel.kesFlagUrl), action: {}, hasArrow: false)
                         .accessibilityLabel("Target Currency")
