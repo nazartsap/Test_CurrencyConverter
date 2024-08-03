@@ -12,11 +12,11 @@
 		04A866992C5E31050067D8E0 /* ExchangeRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A866982C5E31050067D8E0 /* ExchangeRateService.swift */; };
 		04A8669B2C5E312D0067D8E0 /* ExchangeRateModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8669A2C5E312D0067D8E0 /* ExchangeRateModels.swift */; };
 		04A8669E2C5E318D0067D8E0 /* CurrencyConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A8669D2C5E318D0067D8E0 /* CurrencyConverterApp.swift */; };
-		04A866A92C5E31DD0067D8E0 /* CurrencyConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A866A82C5E31DD0067D8E0 /* CurrencyConverterViewModel.swift */; };
 		04A866AD2C5E33170067D8E0 /* CurrencyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A866AC2C5E33170067D8E0 /* CurrencyButton.swift */; };
 		04A866B92C5E343C0067D8E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A866B82C5E343C0067D8E0 /* ContentView.swift */; };
 		04A866BB2C5E346D0067D8E0 /* CurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A866BA2C5E346D0067D8E0 /* CurrencyPickerView.swift */; };
 		04A866BF2C5E34D30067D8E0 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A866BE2C5E34D30067D8E0 /* CurrencyTextField.swift */; };
+		04A866C32C5E35EE0067D8E0 /* CurrencyConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A866C22C5E35EE0067D8E0 /* CurrencyConverterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +26,11 @@
 		04A866982C5E31050067D8E0 /* ExchangeRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateService.swift; sourceTree = "<group>"; };
 		04A8669A2C5E312D0067D8E0 /* ExchangeRateModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateModels.swift; sourceTree = "<group>"; };
 		04A8669D2C5E318D0067D8E0 /* CurrencyConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterApp.swift; sourceTree = "<group>"; };
-		04A866A82C5E31DD0067D8E0 /* CurrencyConverterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrencyConverterViewModel.swift; path = "../../../Сurrency_Сonverter_1/Сurrency_Сonverter/ViewModels/CurrencyConverterViewModel.swift"; sourceTree = "<group>"; };
 		04A866AC2C5E33170067D8E0 /* CurrencyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyButton.swift; sourceTree = "<group>"; };
 		04A866B82C5E343C0067D8E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04A866BA2C5E346D0067D8E0 /* CurrencyPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPickerView.swift; sourceTree = "<group>"; };
 		04A866BE2C5E34D30067D8E0 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		04A866C22C5E35EE0067D8E0 /* CurrencyConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		04A866A72C5E31CF0067D8E0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				04A866A82C5E31DD0067D8E0 /* CurrencyConverterViewModel.swift */,
+				04A866C22C5E35EE0067D8E0 /* CurrencyConverterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -183,8 +183,8 @@
 				04A866992C5E31050067D8E0 /* ExchangeRateService.swift in Sources */,
 				04A8669E2C5E318D0067D8E0 /* CurrencyConverterApp.swift in Sources */,
 				04A866B92C5E343C0067D8E0 /* ContentView.swift in Sources */,
-				04A866A92C5E31DD0067D8E0 /* CurrencyConverterViewModel.swift in Sources */,
 				04A866BB2C5E346D0067D8E0 /* CurrencyPickerView.swift in Sources */,
+				04A866C32C5E35EE0067D8E0 /* CurrencyConverterViewModel.swift in Sources */,
 				04A866AD2C5E33170067D8E0 /* CurrencyButton.swift in Sources */,
 				04A866BF2C5E34D30067D8E0 /* CurrencyTextField.swift in Sources */,
 				04A8669B2C5E312D0067D8E0 /* ExchangeRateModels.swift in Sources */,
