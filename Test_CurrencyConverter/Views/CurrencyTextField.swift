@@ -9,7 +9,6 @@ struct CurrencyTextField: View {
     
     var body: some View {
         TextField("0.00", text: $text)
-            .keyboardType(.decimalPad)
             .frame(width: 130)
             .padding()
             .disabled(!isEditable)

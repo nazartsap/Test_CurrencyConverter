@@ -9,13 +9,7 @@ struct CurrencyPickerView: View {
         NavigationView {
             List(viewModel.getCurrencies(), id: \.code) { currency in
                 Button(action: {
-                    if isSourceCurrency {
-                        viewModel.sourceCurrency = currency
-                    } else {
-                        viewModel.targetCurrency = currency
-                    }
-                    showCurrencyPicker = false
-                    viewModel.convert()
+                    selectCurrency(currency: currency)
                 }) {
                     HStack {
                         if let url = URL(string: currency.imgUrl) {
@@ -35,6 +29,24 @@ struct CurrencyPickerView: View {
             }
             .accessibilityLabel("Close currency picker")
             .accessibilityHint("Tap to close the currency picker"))
+        }
+    }
+
+    private func selectCurrency(currency: Currency) {
+        Task {
+            if isSourceCurrency {
+                await MainActor.run {
+                    viewModel.sourceCurrency = currency
+                }
+            } else {
+                await MainActor.run {
+                    viewModel.targetCurrency = currency
+                }
+            }
+            await MainActor.run {
+                showCurrencyPicker = false
+                viewModel.convert()
+            }
         }
     }
 }
